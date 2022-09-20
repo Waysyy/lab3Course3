@@ -221,5 +221,23 @@ namespace overload
             finally { //MessageBox.Show("Вы забыли заполнить поля"); 
             }
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                dataGridView1.Rows.Clear();
+                dataGridView1.Refresh();
+                dataGridView2.Rows.Clear();
+                dataGridView2.Refresh();
+                label1.Text = null;
+                label2.Text = null;
+                label3.Text = null;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
     }
 }

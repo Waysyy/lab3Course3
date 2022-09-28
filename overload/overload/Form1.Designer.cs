@@ -30,10 +30,10 @@ namespace overload
         private void InitializeComponent()
         {
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.col1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.col1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
@@ -54,6 +54,13 @@ namespace overload
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(120, 207);
             this.dataGridView1.TabIndex = 0;
+            // 
+            // col1
+            // 
+            this.col1.Frozen = true;
+            this.col1.HeaderText = "";
+            this.col1.MaxInputLength = 1;
+            this.col1.Name = "col1";
             // 
             // label1
             // 
@@ -78,17 +85,10 @@ namespace overload
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1});
-            this.dataGridView2.Location = new System.Drawing.Point(159, 21);
+            this.dataGridView2.Location = new System.Drawing.Point(167, 21);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.Size = new System.Drawing.Size(120, 207);
             this.dataGridView2.TabIndex = 3;
-            // 
-            // col1
-            // 
-            this.col1.Frozen = true;
-            this.col1.HeaderText = "";
-            this.col1.MaxInputLength = 1;
-            this.col1.Name = "col1";
             // 
             // dataGridViewTextBoxColumn1
             // 
